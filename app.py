@@ -57,7 +57,7 @@ with expander:
     
 predata = pd.DataFrame([inputdata])[names]
 data = predata.copy()
-data = scaler.fit_transform(data)
+data = scaler.transform(data)
 
 with expander:
     layoutc = st.columns([1, 2, 1])
